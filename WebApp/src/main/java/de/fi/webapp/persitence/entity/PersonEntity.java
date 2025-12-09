@@ -2,10 +2,7 @@ package de.fi.webapp.persitence.entity;
 
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 import java.util.UUID;
@@ -21,6 +18,7 @@ public class PersonEntity {
     private String vorname;
     @Column(length = 20, nullable = false)
     private String nachname;
+
 
     public PersonEntity() {
     }
