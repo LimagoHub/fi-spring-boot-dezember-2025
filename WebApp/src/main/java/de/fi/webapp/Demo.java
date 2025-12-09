@@ -2,7 +2,8 @@ package de.fi.webapp;
 
 
 import de.fi.webapp.persitence.entity.PersonEntity;
-import de.fi.webapp.persitence.entity.PersonRepository;
+
+import de.fi.webapp.persitence.repository.PersonRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +20,8 @@ public class Demo {
 
     @PostConstruct
     public void play() {
-        PersonEntity person = new PersonEntity(UUID.fromString("4ea2578b-9361-4a1b-bde2-95db9b725682"), "John", "Rambo");
-        personRepository.save(person);
+
+        //personRepository.findByVorname("John").forEach(System.out::println);
+        personRepository.findTinies().forEach(System.out::println);
     }
 }
