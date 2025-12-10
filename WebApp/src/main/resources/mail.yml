@@ -1,0 +1,5 @@
+mail:
+  host: smpt.irgendwo.de
+  username: Fritz
+  password: Geheim
+  protocol: pop3
